@@ -1,0 +1,13 @@
+name: Create QubesOS RPMs
+
+on:
+  pull_request:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  grub2:
+    uses: TrenchBoot/.github/.github/workflows/qubes-dom0-packagev2.yml@master
+    with:
+      qubes-component: 'grub2'
