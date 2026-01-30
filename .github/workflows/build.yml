@@ -8,6 +8,7 @@ on:
 
 jobs:
   grub2:
-    uses: TrenchBoot/.github/.github/workflows/qubes-dom0-packagev2.yml@master
+    uses: zarhus/qubes-builder-workflows/.github/workflows/qubes-dom0-packagev2.yml@sq
     with:
       qubes-component: 'grub2'
+    secrets: inherit
